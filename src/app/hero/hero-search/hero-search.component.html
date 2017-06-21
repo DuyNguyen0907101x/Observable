@@ -1,0 +1,7 @@
+<div>
+  <h2>Searching for hero's name</h2>
+  <input type="text" [formControl]="keyword">
+  <ul>
+    <li *ngFor="let hero of heroes | async">{{hero}}</li>
+  </ul>
+</div>

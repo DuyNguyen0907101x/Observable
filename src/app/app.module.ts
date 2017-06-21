@@ -6,13 +6,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { WikipediaSearchComponent } from './wikipedia-search/wikipedia-search.component';
+import { HeroSearchComponent } from './hero/hero-search/hero-search.component';
 
 import { WikipediaService } from './wikipedia/wikipedia.service';
+import { HeroService } from './hero/hero.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WikipediaSearchComponent
+    WikipediaSearchComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { WikipediaService } from './wikipedia/wikipedia.service';
     ReactiveFormsModule
   ],
   providers: [
-    WikipediaService
+    WikipediaService,
+    HeroService
   ],
   bootstrap: [AppComponent]
 })
