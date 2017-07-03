@@ -1,7 +1,18 @@
-<div>
-  <h2>Searching for hero's name</h2>
+<!-- <div>
+  <h2>{{title}}</h2>
   <input type="text" [formControl]="keyword">
   <ul>
-    <li *ngFor="let hero of heroes | async">{{hero}}</li>
+    <li *ngFor="let hero of heroes">{{hero}}</li>
   </ul>
+</div> -->
+<div>
+  <h2>{{title}}</h2>
+  <button type="button" name="button" (click)="getHeroes()">Get Heroes</button>
+  <ul>
+    <li *ngFor="let hero of heroes">{{hero}}</li>
+  </ul>
+</div>
+
+<div>
+  <qr-code [value]="qrCodeData"></qr-code>
 </div>
